@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main.css/' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+                <h1 class="display-6 fw-bold">Comentarios</h1>
+
+        <form  method="POST" class="card card-body bg-secondary">
+        {% csrf_token %}
+
+        <label for="title">Nombre:</label>
+        <input value="{{task.tittle}}" type="text" name="tittle" placeholder="Escribe tu Nombre" class="form-control mb-2">
+
+        <label for="hora">Hora:</label>
+        <input value="{{task.hora}}" type="time" name="hora" placeholder="Ingrese la Hora" class="form-control mb-2">
+
+        <label for="fecha">Fecha:</label>
+        <input value="{{task.fecha}}" type="date" name="fecha" placeholder="Ingrese la Fecha" class="form-control mb-2">
+
+        <label for="description">Comentario:</label>
+        <input value="{{task.description}}" name="description" rows="3" placeholder="Escriba su comentario" class="form-control mb-2">
+
+        <button class="btn btn-success">Actualizar</button>
+    </form>
+    </div>
+   </div>
+</div>
+</body>
+</html>

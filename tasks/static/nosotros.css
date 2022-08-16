@@ -1,0 +1,151 @@
+body {
+    background: url(https://eva.yavirac.edu.ec/theme/image.php/lambda/theme/1656087083/page_bg/page_bg_00) no-repeat, center, top;
+    background-size: cover, no-repeat, top;
+}
+
+* {
+    margin: 0;
+    border: 20;
+}
+
+.box{
+    margin: 2px;
+}
+
+.anuncios {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 70px;
+}
+
+.pie-pagina {
+    width: 100%;
+    background-color: #085eb9;
+    height: 242px;
+    margin-top: 100px;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 0px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: aqua;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+    margin-top: -20px;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+
+/*Actualizado*/
+
+.cuadro_info {
+    position: relative;
+    display: flex;
+    width: 100%;
+    top: 50px;
+    border-bottom: 2px solid #cecece;
+    border-top: 2px solid #cecece;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.cuadro_info .ubicacion_code {
+    position: relative;
+    top: 100px;
+    right: 10%;
+}
+
+.ubicacion_code h2{
+    position: relative;
+    right: 10%;
+}
+.ubicacion_code img {
+    width: 300px;
+    position: static;
+    right: 40px;
+    bottom: 50px;
+}
+.ubicacion_code h2{
+    right: 50px;
+    bottom: 50px;
+    padding-top: 50px;
+}
+
+.inf{
+    position: relative;
+    padding-left: 8%;
+}
+.titulo{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+}
+
+
+/*............*/
+
+@media screen and (max-width:100px) {
+    .pie-pagina .grupo-1 {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+        padding: 50px 0px;
+    }
+}

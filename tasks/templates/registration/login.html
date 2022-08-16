@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'IniciarSesion.css' %}">
+    <link rel="shortcut icon" href="https://eva.yavirac.edu.ec/pluginfile.php/1/theme_lambda/favicon/1656087083/nuevos%20logo%20YAVIRAC-04.png">
+    <title>LOGIN"</title>
+</head>
+<body>
+    <div class="iniciar-sesion">
+        <img class="logo" src="https://pbs.twimg.com/profile_images/1275479408741146625/zJ2JntBQ_400x400.jpg" alt="logo">
+        <h1>INICIAR SESIÓN</h1>
+        <form action="" method="post">
+            {% csrf_token %}
+            {{ form }}
+
+            <input type="submit" value="ingresar">
+        </form>
+    </div>
+</body>
+</html>

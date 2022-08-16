@@ -1,0 +1,106 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/e0a3a9c21a.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'nosotros.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="shortcut icon" href="https://eva.yavirac.edu.ec/pluginfile.php/1/theme_lambda/favicon/1656087083/nuevos%20logo%20YAVIRAC-04.png">
+    <title>Contactos</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <img class="logo" src="https://yavirac.edu.ec/img/Logo%20Yavirac.png" alt="">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'Anuncios' %}">Anuncios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'Contactos' %}">Contactos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'Comentarios' %}">Comentarios</a>
+                </li>
+              </li>
+            </ul>
+            <div class="d-flex" role="search">
+                <a name="" id="" class="btn btn-success" href="{% url 'crear' %}" role="button">Agregar nueva Noticia</a>
+                <a href="{% url 'login' %}"><button class="btn btn-primary" type="submit">Iniciar Sesion</button></a>
+            </div>
+        </div>
+        </div>
+    </nav>
+    
+    <div class="titulo"><h1 class="fw-blod text-center">CONTACTOS</h1></div>
+
+    <div class="cuadro_info">
+        <div class="inf">
+            <h2 class=" fw-blod fs-1">Informacion contactos</h2>
+            <h2 class="fs-4">Direccion:
+                <p class="fw-normal">Garcia Moreno S4-35 y Ambato, Quito - Ecuador</p>
+            </h2>
+            <h2 class="fs-4">Telefono:
+                <p class="fw-normal">02 394 1080</p>
+            </h2>
+            <h2 class="fs-4">Extenciones:
+                <p class="fw-normal">
+                    <ul>
+                        <li class="fw-normal">1000 Secretaria Rectorado</li>
+                        <li class="fw-normal">1002 Coordinacion</li>
+                        <li class="fw-normal">1004 Secretaria General</li>
+                        <li class="fw-normal">1005 Centro de Educacion</li>
+                        <li class="fw-normal">1006 Recepcion</li>
+                    </ul>
+                </p>
+            </h2>
+            <h2 class="fs-4">Correo Telefonico:
+                <p class="fw-normal">info@yarivac.edu.ec</p>
+            </h2>
+            <h2 class="fs-4">Horario de atencion:
+                <p class="fw-normal">de lunes a viernes, de 08H00 a 17H00</p>
+            </h2>
+        </div>
+        <div class="ubicacion_code">
+            <img class="center" src="https://yavirac.edu.ec/img/qr-code.png">
+            <h2 class="fw-blod fs-1">codigo de UBICACION</h2>
+        </div>
+    </div>
+</body>
+
+<footer class="pie-pagina ">
+    <div class="grupo-1 ">
+        <div class="box ">
+            <figure>
+                <a href="# ">
+                    <img src="https://yavirac.edu.ec/img/Logo%20Yavirac%20en%20negativo.png" alt="Logo de SLee Dw ">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>UBICACION</h2>
+            <p>García Moreno S4-35 y Ambato, Quito - Ecuador</p>
+            <p>Horario de atención: De lunes a viernes, de 08H00 a 17H00</p>
+        </div>
+        <div class="box ">
+            <h2>SIGUENOS</h2>
+            <div class="red-social">
+                <a href="https://www.facebook.com/yavirac.edu.ec" class="fa fa-facebook"><img src="/IMG/facebook.png" alt=""></a>
+                <a href="https://twitter.com/SuperiorYavirac" class="fa fa-instagram"><img src="/IMG/twitter.png" alt=""></a>
+                <a href="https://www.instagram.com/superiortecnologicoyavirac/?hl=es-la" class="fa fa-twitter"><img src="/IMG/instagram.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="grupo-2 ">
+        <small>&copy; 2022 <b>YAVIRAC</b> - Todos los Derechos Reservados.</small>
+    </div>
+
+</footer>
+
+</html>
+    
